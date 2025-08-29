@@ -9,7 +9,14 @@
 </head>
 
 <body>
-    <div class="center-text">M294</div>
+    <div class="center-text" id="text">M294</div>
+
+    <script>
+        const text = document.getElementById('text');
+        text.addEventListener('click', () => {
+            document.body.classList.toggle('inverted');
+        });
+    </script>
 </body>
 
 </html>
